@@ -220,7 +220,7 @@
             <h4>Frontend Engineer</h4>
           </div>
           <div class="swiper-slide slide">
-            <img src="assets/img/03.png" alt="" />
+            <img src="assets/img/fatwa.jpg" alt="" />
             <div class="share">
               <a href="#" class="fab fa-twitter"></a>
               <a href="#" class="fab fa-instagram"></a>
@@ -230,7 +230,7 @@
             <h4>Frontend Engineer</h4>
           </div>
           <div class="swiper-slide slide">
-            <img src="assets/img/fatwa.jpg" alt="" />
+            <img src="assets/img/01.png" alt="" />
             <div class="share">
               <a href="#" class="fab fa-twitter"></a>
               <a href="#" class="fab fa-instagram"></a>
@@ -260,7 +260,7 @@
             <h4>Quality Assurance</h4>
           </div>
           <div class="swiper-slide slide">
-            <img src="assets/img/01.png" alt="" />
+            <img src="assets/img/wildanu.jpg" alt="" />
             <div class="share">
               <a href="#" class="fab fa-twitter"></a>
               <a href="#" class="fab fa-instagram"></a>
@@ -286,7 +286,7 @@
           <img src="assets/img/contact.gif" alt="" />
         </div>
 
-        <form action="" method="post">
+        <form action="javascript:void(0)" method="post" id="kontakForm">
           <span>Name:</span>
           <input
             type="text"
@@ -295,6 +295,7 @@
             maxlength="50"
             name="name"
             class="box"
+            id="name"
           />
           <span>Email address:</span>
           <input
@@ -304,16 +305,18 @@
             maxlength="50"
             name="email"
             class="box"
+            id="email"
           />
           <span>Phone number:</span>
           <input
-            type="number"
+            type="phone"
             required
             placeholder="enter your valie number"
-            max="9999999999"
+            max="12"
             min="0"
-            name="number"
+            name="phone"
             class="box"
+            id="phone"
             onkeypress="if(this.value.length == 10) return false;"
           />
           <span>Message:</span>
@@ -325,9 +328,17 @@
             class="box"
             rows="4"
             cols="50"
+            id="message"
           ></textarea>
 
-          <input type="submit" value="Send Message" class="btn" name="send" />
+          <input
+            id="submit"
+            value="Send Message"
+            class="btn"
+            name="send"
+            type="button"
+            onclick="kirimForm()"
+          />
         </form>
       </div>
     </section>
@@ -403,5 +414,6 @@
 
     <!-- custom js file link  -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/contactus.js"></script>
   </body>
 </html>

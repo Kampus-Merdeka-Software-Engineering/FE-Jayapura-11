@@ -54,7 +54,7 @@
     <section class="contact" id="contact">
       <h1 class="heading"><span>contact</span> us</h1>
       <div class="row">
-        <form action="" method="post">
+        <form action="javascript:void(0)" method="post" id="kontakForm">
           <span>Name:</span>
           <input
             type="text"
@@ -63,6 +63,7 @@
             maxlength="50"
             name="name"
             class="box"
+            id="name"
           />
           <span>Email address:</span>
           <input
@@ -72,16 +73,18 @@
             maxlength="50"
             name="email"
             class="box"
+            id="email"
           />
           <span>Phone number:</span>
           <input
-            type="number"
+            type="phone"
             required
             placeholder="enter your valie number"
-            max="999999999999"
+            max="12"
             min="0"
-            name="number"
+            name="phone"
             class="box"
+            id="phone"
             onkeypress="if(this.value.length == 10) return false;"
           />
           <span>Message:</span>
@@ -93,9 +96,17 @@
             class="box"
             rows="4"
             cols="50"
+            id="message"
           ></textarea>
 
-          <input type="submit" value="Send Message" class="btn" name="send" />
+          <input
+            id="submit"
+            value="Send Message"
+            class="btn"
+            name="send"
+            type="button"
+            onclick="kirimForm()"
+          />
         </form>
       </div>
     </section>
@@ -169,6 +180,7 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- custom js file link  -->
+    <script src="assets/js/contactus.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
