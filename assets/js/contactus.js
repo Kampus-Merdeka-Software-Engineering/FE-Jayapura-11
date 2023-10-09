@@ -20,7 +20,7 @@ function kirimForm() {
   }
 
   // Mengirim data ke API
-  fetch("http://localhost:6969/contact-us/", {
+  fetch("https://be-jayapura-11-production.up.railway.app/contact-us", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -7,7 +7,9 @@ function getCourseIdFromUrl() {
 // Fungsi untuk mengambil data kursus berdasarkan ID
 async function fetchData(courseId) {
   try {
-    const response = await fetch(`http://localhost:6969/courses/`);
+    const response = await fetch(
+      `https://be-jayapura-11-production.up.railway.app/courses`
+    );
     const data = await response.json();
 
     // Temukan data kursus yang sesuai dengan ID yang diberikan

@@ -1,5 +1,5 @@
 // URL API yang akan Anda fetch data-nya
-const apiUrl = "http://localhost:6969/courses/";
+const apiUrl = "https://be-jayapura-11-production.up.railway.app/courses";
 
 // Fungsi untuk menangani klik tombol "Watch Course"
 function handleWatchCourseClick(event) {
